@@ -1,0 +1,319 @@
+
+/* Group */
+
+.home{
+  color: white;
+  text-decoration: none;
+}
+.app {
+  width: 600px;
+  margin-top: 80px;
+  margin-left: 30%;
+  padding: 20px;
+  border: 3px solid lightblue;
+  border-radius: 8px;
+  background-color: rgb(218, 231, 237);
+}
+
+.form-container {
+  margin-top: 30px;
+}
+
+
+
+input[type="text"] {
+  padding: 10px;
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.text-input{
+  width: 80%;
+
+}
+
+
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Group table*/
+
+.items-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.items-table th, .items-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.items-table th {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+}
+
+.items-table td {
+  background-color: #fff;
+}
+
+.deup{
+  margin-left: 20px;
+  margin-right: 50px;
+ 
+}
+.icon{
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+
+
+
+  /* For Tablet View */
+  @media screen and (min-device-width: 768px)
+  and (max-device-width: 1024px) {
+    .home{
+      color: white;
+      text-decoration: none;
+    }
+    .app {
+      width: 100%;
+      margin-top: 120px;
+      margin-left: 0%;
+      padding: 20px;
+      border: 3px solid lightblue;
+      border-radius: 8px;
+      background-color: rgb(218, 231, 237);
+    }
+            
+  }
+
+
+
+
+  /* For Mobile Portrait View */
+  @media screen and (max-device-width: 480px)
+  and (orientation: portrait) {
+    .home{
+      color: white;
+      text-decoration: none;
+    }
+    .app {
+      width: 100%;
+      margin-top: 150px;
+      margin-left: 1px;
+      padding: 20px;
+      border: 3px solid lightblue;
+      border-radius: 8px;
+      background-color: rgb(218, 231, 237);
+    }
+
+    .form-container {
+      margin-top: 30px;
+    }
+    
+    
+    
+    input[type="text"] {
+      padding: 10px;
+      flex: 1;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+    
+    .text-input{
+      width:auto;
+    
+    }
+    
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      margin-top: 15px;
+      border: none;
+      border-radius: 4px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+    
+    button:hover {
+      background-color: #0056b3;
+    }
+    
+    
+    /* Group table*/
+
+    .items-table {
+      width: 100%;
+      height: auto;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    
+    .items-table th, .items-table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      
+    }
+    
+    .items-table th {
+      background-color: #007bff;
+      color: #fff;
+    }
+    
+    .items-table td {
+      background-color: #fff;
+    }
+    
+    .deup{
+      margin-left: 20px;
+      margin-right: 50px;
+    }
+    .upde{
+      margin-right: 30px;
+      margin-top: 10px;
+    }
+    .icon{
+      margin-top: 20px;
+      margin-left: 10px;
+      margin-right: 20px;
+    }
+    
+  }
+
+
+
+
+  /* For Mobile Phones Portrait or Landscape View */
+  @media screen and (max-device-width: 640px) {
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    center h1{
+      margin-top: 250px;
+      margin-left: -7px;
+    }
+    
+    .sidebar {
+     
+      width: 100%;
+      position: fixed;
+      top:0px;
+      left: 0;
+      background-color:red;
+      display: flex;
+      height: 90px;
+      
+    }
+    
+    .sidebar h2 {
+      color: white;
+      text-align: center;
+      margin-left: 40px;      
+    }
+    .sidebar ul {
+      list-style-type: none;
+      display: flex;
+      position: fixed;
+      top:0px;
+      margin-left: 0px;
+      margin-top: 40px;
+      font-size: 18px;
+     
+    }
+    
+    .sidebar li {
+      padding: 10px;
+      color: white;
+      cursor: pointer;
+      margin-left: 80px;
+      margin-right: -60px;  
+    } 
+    
+    .sidebar .dropdown {
+      position: relative;
+      
+    }
+    
+    .sidebar .dropdown .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      min-width: 180px;
+      z-index: 1;
+      left: -70px;
+      margin-top: 50px;
+      
+    }
+    
+    .sidebar .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    
+    .sidebar .dropdown-content li {
+      padding: 10px;
+    }
+  }
+  @media screen and (min-device-width: 640px)
+  and (max-device-width: 768px) {
+    .home{
+      color: white;
+      text-decoration: none;
+    }
+    .app {
+      width: 100%;
+      margin-top: 150px;
+      margin-left: 1px;
+      padding: 20px;
+      border: 3px solid lightblue;
+      border-radius: 8px;
+      background-color: rgb(218, 231, 237);
+    }
+
+  }
+
+
+
+  /* For Mobile Phones Portrait or Landscape View */
+  @media screen and (max-device-width: 640px) {
+    
+    .home{
+      color: white;
+      text-decoration: none;
+    }
+    .app {
+      width: 100%;
+      margin-top: 150px;
+      margin-left: 1px;
+      padding: 20px;
+      border: 3px solid lightblue;
+      border-radius: 8px;
+      background-color: rgb(218, 231, 237); 
+    }
+  }
+  

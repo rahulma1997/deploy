@@ -1,0 +1,76 @@
+/* import React, { useState, useEffect } from "react";
+import axios from "axios";
+import { Link } from "react-router-dom";
+
+const FormEdit = ({ id }) => {
+  const [groupName, setGroupName] = useState("");
+  const [acName, setAcName] = useState("");
+  const [address, setAddress] = useState("");
+  const [city, setCity] = useState("");
+  const [pincode, setPincode] = useState("");
+  const [state, setState] = useState("");
+  const [contact1, setContact1] = useState("");
+  const [contact2, setContact2] = useState("");
+  const [email, setEmail] = useState("");
+  const [panNo, setPanNo] = useState("");
+  const [gstNo, setGstNo] = useState("");
+  const [obdr, setObdr] = useState("");
+  const [obcr, setObcr] = useState("");
+
+  // Fetch data for the specified ID on component mount
+  useEffect(() => {
+    if (id) {
+      fetchData();
+    }
+  }, [id]);
+
+  const fetchData = async () => {
+    try {
+      const response = await axios.get(`http://localhost:4000/a_data/${id}`);
+      const data = response.data;
+      setGroupName(data.group_name);
+      setAcName(data.ac_name);
+      setAddress(data.address);
+      setCity(data.city);
+      setPincode(data.pincode);
+      setState(data.state);
+      setContact1(data.contact1);
+      setContact2(data.contact2);
+      setEmail(data.email);
+      setPanNo(data.pan_no);
+      setGstNo(data.gst_no);
+      setObdr(data.obdr);
+      setObcr(data.obcr);
+    } catch (error) {
+      console.error("Error fetching data: ", error);
+    }
+  };
+
+  // Handle form submission to update data
+  const handleUpdate = async (e) => {
+    e.preventDefault();
+    const formData = {
+      group_name: groupName,
+      ac_name: acName,
+      address: address,
+      city: city,
+      pincode: pincode,
+      state: state,
+      contact1: contact1,
+      contact2: contact2,
+      email: email,
+      pan_no: panNo,
+      gst_no: gstNo,
+      obdr: obdr,
+      obcr: obcr,
+    };
+
+    try {
+      const response = await axios.put(`http://localhost:4000/a_data/${id}`, formData);
+      console.log("Update successful:", response.data);
+      // Handle success (e.g., show a success message or redirect)
+    } catch (error) {
+      console.error("Error updating form data: ", error);
+      // Handle error (e.g., show an error message)
+    }
+  }; */
